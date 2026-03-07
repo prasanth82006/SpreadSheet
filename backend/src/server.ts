@@ -198,5 +198,5 @@ io.on('connection', (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT =5000;
 httpServer.listen(PORT, () => console.log(`Backend server running on port ${PORT}`));
