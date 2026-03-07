@@ -17,7 +17,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://spreadsheet-x97s.vercel.app/login",
     methods: ["GET", "POST"]
   }
 });
