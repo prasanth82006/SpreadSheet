@@ -60,6 +60,11 @@ app.get('/api/documents/:id', protect, async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+    res.send('Server is Live!');
+});
+
+
 // In-memory room tracking: docId -> { socketId -> user }
 const rooms: Record<string, Record<string, any>> = {};
 
